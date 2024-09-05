@@ -73,3 +73,6 @@ export const DUMMY_RESPONSES = [
   "Sure thing! What can I do for you?",
   "Let me know how I can assist you.",
 ];
+
+export const FIRST_BOT_MESSAGE =
+  "Hello!, This is a dummy bot designed to test your development skills. Please type 'error' to make the bot throw an error. Otherwise, type anything else to get a random response from the bot.";

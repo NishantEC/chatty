@@ -28,7 +28,7 @@ function Chat() {
             )}
           </>
         ))}
-        <ErrorMessagesWrapper></ErrorMessagesWrapper>
+        <ErrorMessagesWrapper>Error goes here</ErrorMessagesWrapper>
         <InputWrapper>
           <StyledInput />
           <Button>Send</Button>

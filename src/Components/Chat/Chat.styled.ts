@@ -72,6 +72,7 @@ export const BotMessage = styled.div`
   padding: 0.6em 1.2em;
   align-self: flex-start;
   margin-bottom: 0.5em;
+  max-width: 80%;
 `;
 
 export const Button = styled.button`
