@@ -6,7 +6,7 @@ import {
   BotMessage,
   Button,
   ErrorMessagesWrapper,
-  InputWrapper,
+  Form,
   StyledInput,
 } from "./Chat.styled";
 
@@ -29,10 +29,10 @@ function Chat() {
           </>
         ))}
         <ErrorMessagesWrapper>Error goes here</ErrorMessagesWrapper>
-        <InputWrapper>
+        <Form>
           <StyledInput />
           <Button>Send</Button>
-        </InputWrapper>
+        </Form>
       </MessagesWrapper>
     </ChatContainer>
   );

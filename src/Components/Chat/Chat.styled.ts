@@ -30,7 +30,7 @@ export const ErrorMessagesWrapper = styled.div`
   color: red;
   text-align: center;
 `;
-export const InputWrapper = styled.form`
+export const Form = styled.form`
   display: flex;
   width: 100%;
   max-width: 48rem;

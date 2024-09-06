@@ -16,7 +16,7 @@ These tasks are designed to test your skills in React, state management, error h
 
 #### Task 1: Implement Send Message Logic
 
-- **Description**: Implement the logic to send a user's message and update the chat interface accordingly. Ensure the user's message is displayed in the chat before the bot's response is generated.
+- **Description**: Implement the logic to send a user's message and update the chat interface accordingly. Ensure the user's message is displayed in the chat before the bot's response is generated. use the services and utilities to generate a message from bot.
 
 #### Task 2: Handle and Show the Error to the User
 
