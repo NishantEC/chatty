@@ -11,9 +11,18 @@ import {
 } from "./Chat.styled";
 
 import * as hooks from "./Chat.hooks";
+import { useState } from "react";
+import Loader from "../Loader";
 
 function Chat() {
-  const { messages } = hooks.useChat();
+  const { messages,sendMessage, isLoading } = hooks.useChat();
+  const [userMsg, setUserMsg] = useState("")
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    sendMessage(userMsg);
+    setUserMsg("");
+  };
 
   return (
     <ChatContainer>
@@ -28,10 +37,17 @@ function Chat() {
             )}
           </>
         ))}
+
+        {isLoading && <Loader />}
+
         <ErrorMessagesWrapper>Error goes here</ErrorMessagesWrapper>
-        <Form>
-          <StyledInput />
-          <Button>Send</Button>
+        <Form onSubmit={handleSubmit}>
+          <StyledInput 
+            type="text"
+            value={userMsg}
+            onChange={(e) => setUserMsg(e.target.value)}
+          />
+          <Button type="submit">Send</Button>
         </Form>
       </MessagesWrapper>
     </ChatContainer>
